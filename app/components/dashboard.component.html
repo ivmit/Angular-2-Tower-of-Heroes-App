@@ -1,0 +1,11 @@
+<h3>{{title}}</h3>
+
+<div class="grid grid-pad">
+  <div class="col-l-4" template="ngFor let hero of heroes" (click)="goToDetail(hero)">
+    <div class="module hero">
+      <h4>{{hero.name}}</h4>
+    </div>
+  </div>
+</div>
+<hero-search></hero-search>
+
